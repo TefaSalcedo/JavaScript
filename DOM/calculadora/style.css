@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+    overflow-y: hidden;
+}
+/* Flotante */
+.parent{
+    background-color: rgb(255, 236, 254);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 2px #ccc;
+}
+/* titulo Operaciones */
+    .child1{
+        width: 180px;
+        height: 50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h3{
+        font-size: 20px;
+    }
+/* Form */
+    .child2{
+        width: 300px;
+        height: 130px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4px;
+    }
+    input{
+        max-width: 200px;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+    label{
+        font: size 35px;;
+        font-family: 'Playfair Display', serif;
+    }
+/* Text Resultado */
+    .resultado{
+        width: 250px;
+        margin-top: 20px;
+        border-top:1px solid #ccc;
+    }
+    p{
+        text-align: center;
+        font-size: medium;
+    }
+
+/* Espacio botones */
+    .botones{
+        width: 100%;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .boton{
+        background: rgb(206, 22, 239);
+        background: linear-gradient(0deg, rgba(240, 9, 225, 0.284) 0%, rgba(130, 5, 240, 0.398) 100%);
+        padding: 4px 19px;
+        border-radius: 10px;
+        border: 1px solid rgb(230, 193, 221);
+        
+    }
+    .boton:hover{
+        box-shadow: 0 0 5px 1px rgb(130, 97, 130);
+    } 
+    
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+    .parent{
+        background-color: rgb(255, 236, 254);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        border-radius: 16px;
+        box-shadow: 0 0 5px 2px #ccc;
+    }
+    input{
+        max-width: 400px;
+        font-family: 'Playfair Display', serif;
+    }
+    .child2{
+        width: 400px;
+    }
+    .botones{
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+    }
+  }
